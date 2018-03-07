@@ -1,0 +1,32 @@
+    #weekwork {
+        width: 100%;
+        background: #FF6666;
+        padding: 10px 20px;
+    }
+    #navigate {
+        height: 48px;
+        width: 100%;
+        margin: 0 0 0 12px;
+        padding: 0;
+        border: 0;
+        background: #E8E7E3;
+    }
+    .nav_list {
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        line-height: 24px;
+        font-family: sans-serif;
+    }
+    .header {
+        color: white; 
+        font-size: 36px;
+        text-align: center;
+        font-family: 'Coiny', cursive;
+    }
+    .list {
+        text-align: center;
+        font-size: 20px;
+        color: #CCFF99;
+        line-height: 24px;
+    }
