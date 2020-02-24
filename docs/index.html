@@ -1,72 +1,140 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <title>Week Work</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/2019styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
     <!-- 导航栏 -->
-    <div id="navigate">
-        <table width=60% align="center" border="1">
-            <tr class=nav_list>
-                <td><a href="">2019 Spring</a></td>
-                <td><a href="2018Spring.html">2018 Spring</a></td>
-                <td><a href="2017Fall.html">2017 Fall</a></td>
-            </tr>
-        </table> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WeekWork</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="2020Spring.html">2020 Spring <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="2019Spring.html">2019 Spring</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="2018Spring.html">2018 Spring</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="2017Fall.html">2017 Fall</span></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+    </nav>
+
+<div class="container">
+    <div id="draggable">
+        <img id="duck" src="assets/daijobu.gif" height="100px"/>
     </div>
-
-    <div class="split left">  <div class="centered"><img src="assets/daijobu.gif"/></div></div>  
-
     <!-- 课程表主体 -->
-    <div id="weekwork">
-        <table width=60% align="center" cellspacing="1" cellpadding="20" border="1">
-        <tr>
-            <th colspan="5" align="center" class="header">WeekWork</th>
-        </tr>
-        <tr class="header">
-            <td>Monday</td>
-            <td>Tuesday</td>
-            <td>Wednesday</td>
-            <td>Tuesday</td>
-            <td>Friday</td>
-        </tr>
-        <tr class="list">
-            <td>Ancient Secrets of Computer Vision</td>
-            <td>Statisical Learning</td>
-            <td>VMLS</td>
-            <td>CS224W</td>
-            <td>Paper Reading</td>
-        </tr>
-        <tr class="list">
-            <td>Ancient Secrets of Computer Vision</td>
-            <td>Statisical Learning</td>
-            <td>VMLS</td>
-            <td>CS224W</td>
-            <td>Paper Reading</td>
-        </tr>
-        <tr class="list">
-            <td>Ancient Secrets of Computer Vision</td>
-            <td>Statisical Learning</td>
-            <td>VMLS</td>
-            <td>CS224W</td>
-            <td>Paper Reading</td>
-        </tr>
-        <tr class="list">
-            <td>Ancient Secrets of Computer Vision</td>
-            <td>Statisical Learning</td>
-            <td>VMLS</td>
-            <td>CS224W</td>
-            <td>Paper Reading</td>
-        </tr>
+    <div class="col-ml-6 col-ml-offset-6">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th colspan="8" class="text-center">2020 Spring WeekWork</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Monday</td>
+                <th scope="col">Tuesday</td>
+                <th scope="col">Wednesday</td>
+                <th scope="col">Tuesday</td>
+                <th scope="col">Friday</td>
+                <th scope="col">Saturday</td>
+                <th scope="col">Sunday</td>
+            </tr>
+            <tr scope="row">
+                <td>9:00am to 11:00am</td>
+                <td>GNN和推荐系统的Research</td>
+                <td>GNN和推荐系统的Research</td>
+                <td>GNN和推荐系统的Research</td>
+                <td>GNN和推荐系统的Research</td>
+                <td>GNN和推荐系统的Research</td>
+                <td>法语课堂</td>
+                <td></td>
+            </tr>
+            <tr scope="row">
+                <td>13:00pm to 15:00pm</td>
+                <td>撰写关于Outfit Diagnosis的期刊
+                </td>
+                <td>撰写关于Outfit Diagnosis的期刊
+                </td>
+                <td>撰写关于Outfit Diagnosis的期刊
+                </td>
+                <td>撰写关于Outfit Diagnosis的期刊
+                </td>
+                <td>撰写关于Outfit Diagnosis的期刊
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr scope="row">  
+                <td>15:00pm to 17:00pm</td>
+                <td>Gym</td>
+                <td>Gym</td>
+                <td>Gym</td>
+                <td>Gym</td>
+                <td>Gym</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr scope="row">
+                <td>19:00pm to 21:00pm</td>
+                <td>以大论文为主线的基础知识学习</td>
+                <td>以大论文为主线的基础知识学习</td>
+                <td>以大论文为主线的基础知识学习</td>
+                <td>以大论文为主线的基础知识学习</td>
+                <td>以大论文为主线的基础知识学习</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr scope="row">
+                <td>21:00pm to 23:00pm</td>
+                <td>Ancient Secrets of Computer Vision</td>
+                <td>Statisical Learning</td>
+                <td>VMLS</td>
+                <td>CS224W</td>
+                <td>Paper Reading</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
         </table>
     </div>
+</div>
 
-    <div class="split right">  <div class="centered"><img src="assets/daijobu.gif"/></div></div>
+<script type="text/javascript">
+    $("document").ready(function(){
+        $("thead").css({"color":"red"});
+    });
+    // https://www.youtube.com/watch?v=BWXggB-T1jQ&list=PLGLfVvz_LVvSX7fVd4OUFp_ODd86H0ZIY&index=29
+    // https://www.youtube.com/watch?v=gqOEoUR5RHg
+</script>
 </body>
-</html>
 
+</html>
